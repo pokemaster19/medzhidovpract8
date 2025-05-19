@@ -1,0 +1,105 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f3f3; /* Светлый пастельный фон */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Контейнер приложения */
+#app {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Заголовок */
+h1 {
+  text-align: center;
+  color: #ffb6c1; /* Пастельный розовый */
+  margin-bottom: 20px;
+}
+
+/* Поля ввода и кнопки */
+#task-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffd1dc; /* Пастельный розовый */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ffebcd; /* Пастельный кремовый */
+  color: #333;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffdab9; /* Пастельный персиковый */
+}
+
+/* Фильтры */
+.filter-buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.filter-buttons button {
+  background-color: #c1e1dc; /* Пастельный голубой */
+  margin: 0 2px;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: #87cefa; /* Пастельный небесный */
+}
+
+/* Список задач */
+#task-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#task-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ffd1dc; /* Пастельный розовый */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#task-list li.completed span {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+#task-list li button {
+  background-color: #ffb6c1; /* Пастельный розовый */
+}
+
+#task-list li button:hover {
+  background-color: #ffa07a; /* Пастельный оранжевый */
+}
+
+/* Адаптивность */
+@media (max-width: 500px) {
+  #app {
+    padding: 20px;
+  }
+}
